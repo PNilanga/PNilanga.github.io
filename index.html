@@ -82,9 +82,9 @@
     .container {
       position: relative;
       z-index: 2;
-      max-width: 1100px;
+      max-width: 1400px;
       margin: 0 auto;
-      padding: 0 3rem;
+      padding: 0 5vw;
     }
 
     /* NAV */
@@ -154,7 +154,7 @@
     .hero h1 {
       font-family: 'Cormorant Garamond', serif;
       font-weight: 300;
-      font-size: clamp(3.2rem, 9vw, 6rem);
+      font-size: clamp(4rem, 11vw, 9rem);
       line-height: 1;
       letter-spacing: -0.01em;
       color: var(--ink);
@@ -167,9 +167,9 @@
       font-style: italic;
       font-weight: 300;
       -webkit-text-stroke: 1px rgba(240, 184, 74, 0.55);
-      font-size: clamp(1.8rem, 5.5vw, 3.4rem);
-      letter-spacing: 0.08em;
-      margin-top: 0.4rem;
+      font-size: clamp(2.5rem, 8vw, 6.5rem);
+      letter-spacing: 0.04em;
+      margin-top: 0.3rem;
     }
 
     .glitch { position: relative; display: inline-block; }
@@ -185,9 +185,9 @@
     @keyframes glitch2 { 0%,88%,100%{transform:translate(0);opacity:0} 91%{transform:translate(3px,1px);opacity:0.8} 93%{transform:translate(-3px,-1px);opacity:0.8} 95%{transform:translate(0);opacity:0} }
 
     .hero-desc {
-      max-width: 520px;
+      max-width: 680px;
       color: var(--muted);
-      font-size: 12px;
+      font-size: 14px;
       line-height: 1.9;
       margin: 2rem 0 2.5rem;
     }
@@ -263,9 +263,9 @@
     .skill-card:hover { background: var(--surface2); }
     .skill-card:hover::before { transform: scaleX(1); }
 
-    .skill-card-num { font-size:10px; color:var(--muted); letter-spacing:0.1em; margin-bottom:0.8rem; }
-    .skill-card-title { font-family:'Cormorant Garamond',serif; font-weight:500; font-size:1.2rem; color:var(--ink); margin-bottom:0.4rem; }
-    .skill-card-desc { font-size:11px; color:var(--muted); margin-bottom:1rem; }
+    .skill-card-num { font-size:11px; color:var(--muted); letter-spacing:0.1em; margin-bottom:0.8rem; }
+    .skill-card-title { font-family:'Cormorant Garamond',serif; font-weight:500; font-size:1.4rem; color:var(--ink); margin-bottom:0.4rem; }
+    .skill-card-desc { font-size:12px; color:var(--muted); margin-bottom:1rem; }
     .skill-card-tags { display:flex; flex-wrap:wrap; gap:0.4rem; }
 
     .tag {
@@ -306,11 +306,11 @@
     .project-item:hover { background:var(--surface2); }
     .project-item:hover::after { transform:scaleY(1); }
 
-    .project-num { font-size:10px; color:var(--muted); letter-spacing:0.1em; margin-bottom:0.4rem; }
-    .project-name { font-family:'Cormorant Garamond',serif; font-weight:500; font-size:1.2rem; color:var(--ink); margin-bottom:0.4rem; }
-    .project-type { font-size:10px; color:var(--cyan); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:0.6rem; }
+    .project-num { font-size:11px; color:var(--muted); letter-spacing:0.1em; margin-bottom:0.4rem; }
+    .project-name { font-family:'Cormorant Garamond',serif; font-weight:500; font-size:1.4rem; color:var(--ink); margin-bottom:0.4rem; }
+    .project-type { font-size:11px; color:var(--cyan); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:0.6rem; }
     .project-type.gold { color: var(--gold); }
-    .project-desc { color:var(--muted); font-size:11px; line-height:1.85; }
+    .project-desc { color:var(--muted); font-size:13px; line-height:1.85; }
     .project-stack { display:flex; flex-wrap:wrap; gap:0.4rem; margin-top:1rem; }
 
     /* Odd projects cyan bar, even gold bar */
@@ -330,8 +330,8 @@
     .project-link:hover { background:var(--cyan-dim); border-color:var(--cyan); box-shadow:0 0 12px var(--cyan-dim); }
 
     /* ABOUT */
-    .about-grid { display:grid; grid-template-columns:1.4fr 1fr; gap:4rem; }
-    .about-text { color:var(--muted); font-size:12px; line-height:2; }
+    .about-grid { display:grid; grid-template-columns:1.6fr 1fr; gap:6rem; }
+    .about-text { color:var(--muted); font-size:14px; line-height:2; }
     .about-text p+p { margin-top:1rem; }
 
     .about-facts { display:flex; flex-direction:column; }
@@ -390,14 +390,15 @@
 
     @media(max-width:900px){
       .skills-grid{grid-template-columns:repeat(2,1fr)}
+      .about-grid{grid-template-columns:1fr; gap:3rem}
     }
     @media(max-width:640px){
       .skills-grid{grid-template-columns:1fr}
       .about-grid{grid-template-columns:1fr}
       .project-item{grid-template-columns:1fr}
-      .hero h1{font-size:2.5rem}
-      .hero h1 .surname{font-size:1.4rem}
-      .container{padding:0 1.2rem}
+      .hero h1{font-size:3rem}
+      .hero h1 .surname{font-size:2rem}
+      .container{padding:0 1.5rem}
       body{cursor:auto}
       #cursor,#cursor-ring{display:none}
     }
